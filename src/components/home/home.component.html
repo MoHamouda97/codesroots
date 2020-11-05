@@ -1,0 +1,20 @@
+<meta name="description" content="شركة كودس روتس هي شركة متخصصه في تصميم المواقع وتطبيقات الجوال نتميز بفضل الله باستخدام احدث اللغات والتقنيات في تصميم المواقع والتطبيقات">
+<meta property="og:description" content="شركة كودس روتس هي شركة متخصصه في تصميم المواقع وتطبيقات الجوال نتميز بفضل الله باستخدام احدث اللغات والتقنيات في تصميم المواقع والتطبيقات">
+<meta property="og:url" content="index.html">
+<meta property="og:site_name" content="شركة كودس روتس هي شركة متخصصه في تصميم المواقع وتطبيقات الجوال نتميز بفضل الله باستخدام احدث اللغات والتقنيات في تصميم المواقع والتطبيقات">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="شركة كودس روتس هي شركة متخصصه في تصميم المواقع وتطبيقات الجوال نتميز بفضل الله باستخدام احدث اللغات والتقنيات في تصميم المواقع والتطبيقات">
+<meta name="keywords" content="تصميم مواقع باحترافية,شركة تصميم مواقع في السعودية,تصميم مواقع,تصميم تطبيقات الجوال,افضل شركة لتصميم المواقع ,افضل شركة لبرمجه التطبيقات,تصميم تطبيقات اندرويد">
+
+<section class="main-home">
+    <div class="wrapper" *ngIf="isData">
+        <home-slider [slides]='slides'></home-slider>
+        <comp-video></comp-video>
+        <about-section></about-section>
+        <our-portfolio [works]='works'></our-portfolio>
+        <our-services></our-services>
+        <our-offers></our-offers>
+        <our-clients></our-clients>        
+    </div>
+    <app-loader [loader]='isLoading'></app-loader>
+</section>

@@ -1,1 +1,115 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+/* Start Global */
+
+body{
+    font-family: 'Cairo', sans-serif !important;
+    direction: rtl;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3,
+h4, h5, h6{font-family: 'Cairo', sans-serif !important;}
+
+section{
+    margin: 80px 0;
+    min-height: 250px;
+    position: relative;
+}
+
+/* Start Classes */
+
+.center-align{align-items: center;}
+
+.section-title{
+    margin: 0 0 1.5em 0 !important;
+    font-weight: 100 !important;
+    color: #50D0C7;
+    font-style: italic !important;
+    font-size: 58px !important;
+    text-shadow: 2px 5px 0 rgba(0,0,0,0.2)
+}
+
+.inner-title{
+    font-weight: bold;
+    text-shadow: 10px 10px #F0F0F0;
+}
+
+/* Bootstrap */
+
+.navbar-light .navbar-brand {
+    color: rgba(223, 191, 22, .7);
+    border-radius: 5px;
+}
+
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus{color: rgba(223, 191, 22, 1);}
+
+.bg-light{background-color: #3E4651 !important;}
+
+.navbar-light .navbar-nav .nav-link{color: rgba(255, 255, 255, .6);}
+
+.navbar-light .navbar-nav .active>.nav-link, 
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover{color: rgba(255, 255, 255, .9);}
+
+.nav-link{border-radius: 5px;}
+
+.dropdown-item{text-align: right;}
+
+.dropdown-menu{left: auto;}
+
+.dropdown-item{
+    font-size: 15px;
+    padding-right: 15px;
+}
+
+.dropdown-item.active, .dropdown-item:active{background-color: #3E4651;}
+
+/* Ant D */
+
+.ant-tooltip-inner{font-family: 'Cairo', sans-serif;}
+
+.ant-input-prefix{
+    margin-right: 0;
+    margin-left: 4px;
+    position: relative;
+    top: 5px;    
+}
+
+.ant-form-item-explain, .ant-form-item-extra{text-align: right;}
+
+.ant-spin-dot-item{background-color: #fff;}
+
+.ant-message-notice-content{direction: rtl;}
+
+.ant-message .anticon{
+    margin-left: 8px;
+    margin-right: 0;
+    position: relative;
+    top: -2px;
+}
+
+/* Owl */
+
+.home-slider .owl-theme .owl-nav.disabled+.owl-dots{
+    position: absolute !important;
+    width: 100% !important;
+    bottom: 1px !important;
+}
+
+/* Fontawesome */
+
+.fa-li{
+    left: auto;
+    right: -2em;
+}

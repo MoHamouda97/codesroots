@@ -1,0 +1,27 @@
+.home-about{
+    background-color: #3E4651 !important;
+    margin-top: 0;
+}
+
+.home-about .about{
+    color: #fff;
+    text-align: center;
+}
+
+.home-about .about h2{
+    font-size: 27px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.home-about .about p{
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.home-about img{width: 350px;}
+
+@media only screen and (max-width: 767px) {
+    .home-about .about{padding-top: 35px !important;}
+}

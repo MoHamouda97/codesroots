@@ -1,0 +1,21 @@
+.navbar .navbar-nav .dropdown-menu .icon{width: 30px;}
+
+.cta{
+    display: block;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #50D0C7;
+    text-decoration: none;
+    margin-left: 1rem; 
+    font-weight: bold;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .cta{
+        width: 100%;
+        margin-top: 15px;
+    }
+}

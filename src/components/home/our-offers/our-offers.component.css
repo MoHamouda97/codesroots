@@ -1,0 +1,18 @@
+.our-offers .offer-wrapper{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.our-offers .offer-wrapper .offer-title h4{
+    color: #2b2b2b;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.our-offers .offer-wrapper .offer-description p{
+    color: #2b2b2b;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.our-offers .offer-wrapper .offer-img img{width: 100%;}

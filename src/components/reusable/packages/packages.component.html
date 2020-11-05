@@ -1,0 +1,20 @@
+<div class="packages">
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let package of packages">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">{{package.title}}</h5>
+                <h6 class="card-price text-center"><span class="period">{{package.subtitle}}</span></h6>
+                <hr>
+                <ul class="fa-ul">
+                    <li *ngFor="let offer of package.offers">                      
+                      {{offer.title}}
+                      <span class="fa-li"><i class="fas fa-check"></i></span>
+                    </li>
+                </ul>
+                <a routerLink="/contact" class="btn btn-block text-uppercase" matRipple>اطلبها الان</a>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>

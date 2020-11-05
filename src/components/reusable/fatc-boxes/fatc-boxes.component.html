@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-md-4" *ngFor="let fact of facts">
+        <div class="fact-box">
+            <div class="box-img">
+                <img src="{{fact.icon}}" alt=""  width="60px"/>
+            </div>
+            <div class="box-content">
+                <h3 class="title">{{fact.title}}</h3>
+                <p class="content">{{fact.content}}</p>
+            </div>
+        </div>
+    </div>
+</div>

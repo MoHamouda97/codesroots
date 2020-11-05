@@ -1,0 +1,21 @@
+.video-wrapper{
+    background-color: #50D0C7;
+    border-radius: 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    z-index: 9999;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+    padding: 40px 8px;
+    width: 300px;
+}
+
+.video-wrapper .close-video{
+    position: relative;
+    top: -20px;
+    cursor: pointer;
+    right: 8px;
+    color: #fff;
+    text-align: right;
+    font-size: 25px;
+}

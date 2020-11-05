@@ -1,0 +1,15 @@
+.our-services .section-title{
+    width: 200px;
+    margin-bottom: 25px;
+}
+
+.our-services .service-wrapper{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.our-services .service-wrapper .service-title h4{
+    color: #2b2b2b;
+    font-weight: bold;
+    margin: 15px 0;
+}

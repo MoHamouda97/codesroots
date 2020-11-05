@@ -1,0 +1,32 @@
+.loader-init{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 9999999;
+    height: 100%;
+}
+
+.loader-init span{
+    font-size: 25px;
+    -webkit-animation: Color 4s linear infinite;
+    animation: Color 3s linear infinite;
+    text-shadow: 10px 10px #F0F0F0;
+    font-weight: bold;
+}
+
+@keyframes Color{
+    0%{
+      color:#000;
+    }
+
+    50%{
+        color:#dfbf16;
+    }
+    
+    100%{
+      color:#000;
+    }
+  }

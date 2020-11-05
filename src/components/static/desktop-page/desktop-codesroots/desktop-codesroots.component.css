@@ -1,0 +1,31 @@
+.seo-service{
+    margin-top: 0;
+    padding: 35px 0;
+}
+
+.seo-service .service{
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.seo-service .service h2{
+    font-size: 27px;
+    font-weight: bold;
+    color: #dfbf16;
+    margin-bottom: 25px;
+}
+
+.seo-service ul{
+    padding-right: 25px;
+}
+
+.seo-service ul li{
+    margin-bottom: 5px;
+}
+
+.seo-service img{width: 350px;}
+
+@media only screen and (max-width: 767px) {
+    .seo-service .service{padding-top: 35px !important;}
+}

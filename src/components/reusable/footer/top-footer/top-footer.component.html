@@ -1,0 +1,32 @@
+<footer 
+    class="top-footer"
+    style="background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./../../../../assets/images/contact.jpg);">
+    <div class="container-fluid h-100">
+        <div class="row h-100 center-align">
+            <div class="col-md-4">
+                <div class="whatsapp contact-method" matRipple (click)="goWhatsApp()">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h4 class="for-whatsapp">
+                    تواصل معنا عبر واتس اب
+                </h4>                
+            </div>
+            <div class="col-md-4">
+                <a class="contact contact-method" routerLink="/تواصل-معنا" matRipple>
+                    <i class="fas fa-comments"></i>                  
+                </a>
+                <h4 class="for-contact">
+                    تواصل معنا عبر موقعنا
+                </h4>                  
+            </div>
+            <div class="col-md-4">
+                <div class="mail contact-method" matRipple (click)="goMail()">
+                    <i class="fas fa-envelope"></i>                   
+                </div>
+                <h4 class="for-mail">
+                    تواصل معنا عبر البريد الالكتروني
+                </h4>                                 
+            </div>                        
+        </div>
+    </div>
+</footer>

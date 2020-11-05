@@ -1,0 +1,69 @@
+.top-footer {
+    background-size: cover !important;
+    height: 450px;
+    background-attachment: fixed !important;
+}
+
+.top-footer .contact-method{
+    width: 150px;
+    margin: auto;
+    text-align: center;
+    display: block;
+    height: 150px;
+    line-height: 150px;
+    font-size: 45px;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+    transition: all .3s ease-out;
+}
+
+.top-footer .whatsapp{background-color: #17980E;}
+
+.top-footer .whatsapp:hover{
+    background-color: #fff;
+    color: #17980E;
+    border: 1px solid #17980E;
+}
+
+.top-footer .contact{
+    color: #fff;
+    background-color: #F9AE3A;
+}
+
+.top-footer .contact:hover{
+    background-color: #fff;
+    color: #F9AE3A;
+    border: 1px solid #F9AE3A;
+}
+
+.top-footer .mail{background-color: #E62062;}
+
+.top-footer .mail:hover{
+    background-color: #fff;
+    color: #E62062;
+    border: 1px solid #E62062;
+}
+
+.top-footer h4{
+    text-align: center;
+    font-family: Cairo;
+    font-weight: 700;
+    margin: 15px 0;
+    -webkit-text-stroke-width: 1px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.top-footer h4.for-whatsapp{-webkit-text-stroke-color: #17980E;}
+
+.top-footer h4.for-contact{-webkit-text-stroke-color: #F9AE3A;}
+
+.top-footer h4.for-mail{-webkit-text-stroke-color: #E62062;}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .top-footer{
+        height: 620px;
+    }
+}

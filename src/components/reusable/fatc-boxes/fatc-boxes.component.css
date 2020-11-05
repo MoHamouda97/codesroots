@@ -1,0 +1,40 @@
+.fact-box{
+    position: relative;
+    border: solid 1px #ddd;
+    border-radius: 20px;
+    padding: 60px 12px 12px;
+    text-align: center;
+    min-height: 195px;
+    margin: 40px 0;    
+}
+
+.fact-box .box-img{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #50D0C7;
+    text-align: center;
+    line-height: 90px;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: all .3s ease-out;
+}
+
+.fact-box:hover > div.box-img{
+    background-color: #fff;
+    border: 2px solid #50D0C7;
+}
+
+.fact-box .box-content .title{
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.fact-box .box-content .content {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #939393;
+}

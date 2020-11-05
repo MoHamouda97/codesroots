@@ -1,0 +1,183 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" routerLink="" matRipple>
+        CodesRoots
+    </a>
+    <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#navbarTogglerDemo02" 
+        aria-controls="navbarTogglerDemo02" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav m-auto mt-2 text-right">
+        <li class="nav-item">
+            <a 
+                class="nav-link" 
+                href="#"
+                matRipple
+                routerLinkActive="active" 
+                routerLink="" 
+                [routerLinkActiveOptions] = '{ exact: true }'>
+                الرئيسية
+            </a>
+        </li>
+        <li class="nav-item">
+            <a 
+                class="nav-link dropdown-toggle" 
+                href="#" 
+                id="ourServices" 
+                role="button" 
+                data-toggle="dropdown" 
+                aria-haspopup="true" 
+                aria-expanded="false"
+                matRipple>
+                خدماتنا
+            </a> 
+            <div class="dropdown-menu" aria-labelledby="ourServices">
+                <a 
+                    class="dropdown-item"  
+                    matRipple
+                    routerLinkActive="active" 
+                    routerLink="/الدعم-الفني" 
+                    [routerLinkActiveOptions] = '{ exact: true }'>
+                    <img 
+                        src="./../../../../assets/images/customer-service.png" 
+                        alt="customer-service"
+                        class="icon" />
+                    الدعم الفني
+                </a>
+                <a 
+                    class="dropdown-item"
+                    matRipple
+                    routerLinkActive="active" 
+                    routerLink="/ارشفة-مواقع" 
+                    [routerLinkActiveOptions] = '{ exact: true }'>
+                    <img 
+                        src="./../../../../assets/images/laptop.png" 
+                        alt="laptop"
+                        class="icon" />
+                    ارشفة الموقع SEO                    
+                </a>
+                <a 
+                    class="dropdown-item" 
+                    matRipple
+                    routerLinkActive="active" 
+                    routerLink="/استضافة-مواقع" 
+                    [routerLinkActiveOptions] = '{ exact: true }'>
+                    <img 
+                        src="./../../../../assets/images/hosting-services.png" 
+                        alt="hosting-services"
+                        class="icon" />
+                    الاستضافة                    
+                </a> 
+                <a 
+                    class="dropdown-item"
+                    matRipple
+                    routerLinkActive="active" 
+                    routerLink="/تصميم-مواقع" 
+                    [routerLinkActiveOptions] = '{ exact: true }'>
+                    <img 
+                        src="./../../../../assets/images/web-design.png" 
+                        alt="web-design"
+                        class="icon" />
+                    تصميم المواقع                    
+                </a> 
+                <a 
+                    class="dropdown-item" 
+                    matRipple
+                    routerLinkActive="active" 
+                    routerLink="/تصميم-برمجة-برامج" 
+                    [routerLinkActiveOptions] = '{ exact: true }'>
+                    <img 
+                        src="./../../../../assets/images/monitor.png" 
+                        alt="laptop"
+                        class="icon" />
+                    برامج سطح المكتب                    
+                </a>
+                <a 
+                    class="dropdown-item" 
+                    matRipple
+                    routerLinkActive="active" 
+                    routerLink="/تصميم-برمجة--تطبيقات-الموبايل" 
+                    [routerLinkActiveOptions] = '{ exact: true }'>
+                    <img 
+                        src="./../../../../assets/images/mobile.png" 
+                        alt="mobile"
+                        class="icon" />
+                    تصميم تطبيقات الجوال                    
+                </a>                    
+                <a 
+                    class="dropdown-item" 
+                    matRipple
+                    routerLinkActive="active" 
+                    routerLink="/تسويق-الكتروني" 
+                    [routerLinkActiveOptions] = '{ exact: true }'>
+                    <img 
+                        src="./../../../../assets/images/megaphone.png" 
+                        alt="megaphone"
+                        class="icon" />
+                     التسويق الالكتروني                    
+                </a> 
+                <a class="dropdown-item" href="#" matRipple>
+                    <img 
+                        src="./../../../../assets/images/web-domain.png" 
+                        alt="web-domain"
+                        class="icon" />
+                     شراء دومين                    
+                </a>                                                             
+            </div>                     
+        </li>
+        <li class="nav-item">
+            <a 
+                class="nav-link dropdown-toggle" 
+                href="#" 
+                id="ourOffers" 
+                role="button" 
+                data-toggle="dropdown" 
+                aria-haspopup="true" 
+                aria-expanded="false"
+                matRipple>
+                العروض
+            </a> 
+            
+            <div class="dropdown-menu" aria-labelledby="ourOffers">
+                <a 
+                    class="dropdown-item" 
+                    matRipple
+                    routerLinkActive="active" 
+                    routerLink="/برنامج ادارة السيارات المؤجرة" 
+                    [routerLinkActiveOptions] = '{ exact: true }'>
+                    <img 
+                        src="./../../../../assets/images/car.png" 
+                        alt="car"
+                        class="icon" />
+                    برنامج لادارة شركات تاجير السيارات
+                </a>                                                           
+            </div>            
+        </li> 
+        <li class="nav-item">
+            <a 
+                class="nav-link" 
+                href="#"
+                matRipple
+                routerLinkActive="active" 
+                routerLink="/تواصل-معنا" 
+                [routerLinkActiveOptions] = '{ exact: true }'>
+                اتصل بنا
+            </a>
+        </li>               
+      </ul>
+
+      <a 
+        matRipple 
+        class="cta"
+        routerLink="/contact">
+        افتح تذكرة
+      </a>
+    </div>
+</nav>

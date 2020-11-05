@@ -1,0 +1,26 @@
+.bottom-footer{
+    background-color: #0C2F69;
+    padding: 15px 0;
+}
+
+.bottom-footer .links li{
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.bottom-footer .links li a{
+    display: block;
+    padding: .5rem 1rem;    
+    text-decoration: none;
+    color: #fff;
+}
+
+.bottom-footer .copy{color: #fff;}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .bottom-footer .links,
+    .bottom-footer .copy{text-align: center !important;}
+
+    .bottom-footer .links li a{padding: .5rem .5rem; }
+    
+}

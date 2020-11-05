@@ -1,0 +1,20 @@
+<meta name="description" content="تعتمد شركة كودس روتس علي فريق خبرة في تصميم التطبيقات باللغة الجافا والسويفت بالتطبيقات ال اي او اس والاندرويد ولجميع تطبيقات الاجهزه الذكية وباستخدام احدث التقنيات">
+<meta property="og:description" content="تعتمد شركة كودس روتس علي فريق خبرة في تصميم التطبيقات باللغة الجافا والسويفت بالتطبيقات ال اي او اس والاندرويد ولجميع تطبيقات الاجهزه الذكية وباستخدام احدث التقنيات">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="تعتمد شركة كودس روتس علي فريق خبرة في تصميم التطبيقات باللغة الجافا والسويفت بالتطبيقات ال اي او اس والاندرويد ولجميع تطبيقات الاجهزه الذكية وباستخدام احدث التقنيات">
+<meta name="keywords" content="تصميم تطبيقات ios-تصميم تطبيقات اندرويد-تصميم تطبيقات الجوال-افضل شركة لتصميم المواقع -افضل شركة لبرمجه التطبيقات">
+<meta property="og:site_name" content="شركة كودس روتس هي شركة متخصصه في تصميم المواقع وتطبيقات الجوال نتميز بفضل الله باستخدام احدث اللغات والتقنيات في تصميم المواقع والتطبيقات">
+<meta name="twitter:description" content="شركة كودس روتس هي شركة متخصصه في تصميم المواقع وتطبيقات الجوال نتميز بفضل الله باستخدام احدث اللغات والتقنيات في تصميم المواقع والتطبيقات">
+<meta name="keywords" content="تصميم مواقع باحترافية,شركة تصميم مواقع في السعودية,تصميم مواقع,تصميم تطبيقات الجوال,افضل شركة لتصميم المواقع ,افضل شركة لبرمجه التطبيقات,تصميم تطبيقات اندرويد">
+
+<section class="mobile">
+    <div class="wrapper" *ngIf="isData">
+        <mobile-intro></mobile-intro>
+        <div class="container-fluid">
+            <app-fatc-boxes [facts]='facts'></app-fatc-boxes>
+        </div>
+        <mobile-codesroots></mobile-codesroots>
+        <mobile-work [works]='works'></mobile-work>    
+    </div>
+    <app-loader [loader]='isLoading'></app-loader>
+</section>

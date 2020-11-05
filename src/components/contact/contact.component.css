@@ -1,0 +1,11 @@
+.contact{margin-top: 80px;}
+
+.contact p{
+    width: 35%;
+    margin: auto;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,37 @@
+.top-nav{
+    background: radial-gradient(ellipse at center, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+    padding: 15px;
+} 
+
+.top-nav ul {text-align: right;}
+
+.top-nav ul li{
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.top-nav ul li i{font-size: 20px;}
+
+.top-nav ul.contact li i{
+    position: relative;
+    top: -2px;
+}
+
+.top-nav .stat{
+    padding: 10px;
+    text-align: center;
+    border: 2px dotted #000;
+}
+
+.top-nav .stat p{margin: 0;}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .top-nav ul{text-align: center;}
+
+    .top-nav ul li{
+        font-size: 12px;
+        margin-left: 13px;
+    }
+}

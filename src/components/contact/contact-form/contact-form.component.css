@@ -1,0 +1,11 @@
+.contact-form{margin: 40px 0;}
+
+.contact-form h3{
+    font-weight: bold;
+    text-shadow: 10px 10px #F0F0F0;
+}
+
+.contact-form button{
+    color: #fff;
+    background-color: #25A4B3;
+}

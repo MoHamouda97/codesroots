@@ -1,0 +1,31 @@
+.our-clients{
+    background-color: #0C2F69;
+    padding: 35px 0;
+    margin-bottom: 0 !important;
+}
+
+.our-clients .section-box .box-img img{
+    width: 150px;
+    margin-bottom: 25px;
+}
+
+.our-clients .section-box .box-title h4{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.our-clients .section-box .box-title h4,
+.our-clients .section-box .box-description p{color: #fff;}
+
+.our-clients .section-box .box-description p{font-size: 16px;}
+
+.our-clients .slider{
+    direction: ltr;
+    height: 150px;
+    margin-top: 70px;
+}
+
+.our-clients .slider img{
+    width: 155px;
+    margin: auto;
+}

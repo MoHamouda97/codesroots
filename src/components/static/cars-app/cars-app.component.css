@@ -1,0 +1,51 @@
+.cars-page{
+    margin-top: 0;
+}
+
+.cars-page .page-heade{margin-bottom: 40px;}
+
+.cars-page .page-heade .page-img{
+    height: 500px;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+
+.cars-page .page-heade .page-title{
+    background-color: #0C2F69;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.cars-page .feature-box {margin-bottom: 25px;}
+
+.cars-page .feature-box .feature-title{
+    color: #50D0C7;
+    font-size: 20px;
+    margin-bottom: 20px;;
+}
+
+.cars-page .feature-box .feature-title span{
+    margin-right: 10px;
+}
+
+.cars-page .feature-box .feature-content p{
+    color: #000;
+    line-height: 1.9;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.cars-page a{
+    color: #fff;
+    background-color: #50D0C7;
+}
+
+.cars-page a i{
+    font-size: 20px;
+    margin-left: 5px;
+    position: relative;
+    top: 3px;
+}

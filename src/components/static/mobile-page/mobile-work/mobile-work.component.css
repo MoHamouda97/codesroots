@@ -1,0 +1,46 @@
+.our-portfolio{
+    background-color: #50D0C7;
+    padding: 40px 0;
+}
+
+img{
+    width: 100%;
+}
+
+.our-portfolio .wrapper{margin-bottom: 40px;}
+
+.our-portfolio .wrapper h4{
+    font-weight: bold; 
+    margin-top: 15px;
+    color: #fff;
+}
+
+.our-portfolio-description .wrapper{margin-bottom: 40px;}
+
+.our-portfolio-description .wrapper .portfolio-description p{
+    color: #000;
+    line-height: 1.9;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.our-portfolio-description .wrapper .portfolio-description .btns .stors a img{
+    width: 150px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+
+.our-portfolio-description .wrapper .portfolio-description .btns a.btn-contact{
+    width: 200px;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #50D0C7;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.our-portfolio-description .wrapper .portfolio-img img{
+    width: 300px;
+}

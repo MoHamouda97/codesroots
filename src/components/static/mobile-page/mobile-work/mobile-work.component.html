@@ -1,0 +1,48 @@
+<section class="our-portfolio">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="section-title" style="color: #fff;">
+                    معرض اعمالنا
+                </h2>
+            </div>
+            <div class="col-md-2" *ngFor="let work of works">
+                <div class="wrapper">
+                    <img src="https://www.codesroots.com/library/homepage/photo/umphotos/{{work.photo}}" alt="{{work.name}}" />
+                    <h4 class="text-center">
+                        {{work.name}}
+                    </h4>
+                </div>                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="our-portfolio-description">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6" *ngFor="let work of works">
+                <div class="wrapper">
+                    <div class="portfolio-description text-center">
+                        <h3 class="inner-title" style="font-weight: bold;">{{work.name}}</h3>
+                        <p>{{work.description}}</p>
+                        <div class="btns">
+                            <div class="stors">
+                                <a href="{{work.android_link}}" target="_blank">
+                                    <img src="./../../../../assets/images/google-play.png" alt="" />
+                                </a>
+                                <a href="{{work.ios_link}}" target="_blank">
+                                    <img src="./../../../../assets/images/app-store.png" alt="" />
+                                </a>                                
+                            </div>
+                            <a routerLink="/تواصل-معنا" class="btn-contact" matRipple>تواصل معنا الان</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-img text-center">
+                        <img src="https://www.codesroots.com/library/homepage/photo/umphotos/{{work.inside_photo}}" alt="{{work.name}}" />
+                    </div>                                        
+                </div>                
+            </div>
+        </div>
+    </div>
+</section>

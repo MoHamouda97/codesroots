@@ -1,0 +1,66 @@
+.social li{
+    border-radius: 6px;
+    font-size: 10px !important;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 35px;
+    display: inline-block;
+    margin-left: 20px;
+    transition: all .3s ease-out;
+}
+
+.social li.facebook{background-color: #3A5794;}
+
+.social li.twitter{background-color: #1C9CEA;}
+
+.social li.instagram{background-color: #F79E47;}
+
+.social li.behance{background-color: #000;}
+
+.social li.youtube{background-color: #F60000;}
+
+.social li.linkedin{background-color: #0073B1;}
+
+.social li.dribbble{background-color: #E34A85;}
+
+.social li:hover{background-color: #fff;}
+
+.social li.facebook:hover{border: 2px solid #3A5794}
+.social li.facebook:hover > a{color: #3A5794;}
+
+.social li.twitter:hover{border: 2px solid #1C9CEA}
+.social li.twitter:hover > a{color: #1C9CEA;}
+
+.social li.instagram:hover{border: 2px solid #F79E47}
+.social li.instagram:hover > a{color: #F79E47;}
+
+.social li.behance:hover{border: 2px solid #000}
+.social li.behance:hover > a{color: #000;}
+
+.social li.youtube:hover{border: 2px solid #F60000}
+.social li.youtube:hover > a{color: #F60000;}
+
+.social li.linkedin:hover{border: 2px solid #0073B1}
+.social li.linkedin:hover > a{color: #0073B1;}
+
+.social li.dribbble:hover{border: 2px solid #E34A85}
+.social li.dribbble:hover > a{color: #E34A85;}
+
+.social li a{
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    transition: all .3s ease-out;
+}
+
+.social li a i{font-size: 15px;}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .social{
+        margin-top: 15px;
+        margin-bottom: 15px;        
+    }
+    
+    .social li{margin-left: 15px;}
+}
