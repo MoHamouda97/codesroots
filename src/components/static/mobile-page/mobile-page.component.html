@@ -11,7 +11,7 @@
     <div class="wrapper" *ngIf="isData">
         <mobile-intro></mobile-intro>
         <div class="container-fluid">
-            <app-fatc-boxes [facts]='facts'></app-fatc-boxes>
+            <app-fatc-boxes [facts]='facts' [isCustom]="isCustom"></app-fatc-boxes>
         </div>
         <mobile-codesroots></mobile-codesroots>
         <mobile-work [works]='works'></mobile-work>    

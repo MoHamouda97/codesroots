@@ -13,4 +13,8 @@ export class OurPortfolioComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  setIndex(i) {
+    localStorage.setItem('projectIndex', i);
+  }
+
 }

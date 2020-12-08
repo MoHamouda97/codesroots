@@ -1,0 +1,41 @@
+<section class="learning" style="margin-top: 0;">
+    <div class="wrapper" *ngIf="isData">
+        <learning-intro></learning-intro>
+
+        <div class="container">
+            <div class="row">
+                <div class="jumbotron w-100" style="direction: rtl; text-align: right;">
+                    <div class="row">
+                        <div class="col-6">
+                            <h1 class="display-4">{{lesson.name}}</h1> 
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled text-left lessons-pagination">
+                                <li 
+                                    matRipple
+                                    nz-tooltip
+                                    nzTooltipPlacement="bottom"
+                                    nzTooltipTitle="{{getLessonNameExceptFirstIndex()}}"
+                                    (click)="showPrevLesson()">
+                                    <i class="fas fa-arrow-right"></i>
+                                </li>
+                                <li 
+                                    matRipple
+                                    nz-tooltip
+                                    nzTooltipPlacement="bottom"
+                                    nzTooltipTitle="{{getLessonNameExceptLastIndex()}}"
+                                    (click)="showNextLesson()">    
+                                    <i class="fas fa-arrow-left"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>                                       
+                    <hr class="my-4">
+                    <div class="content-wrapper" [innerHTML]="lesson.content"></div>
+                </div>                
+            </div>
+        </div>
+    </div> 
+    
+    <app-loader [loader]='isLoading'></app-loader>
+</section>

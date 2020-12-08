@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
         this.service.getWorks().subscribe(
           res => {
             this.data = res;
-            this.works = this.data.data;  
+            this.works = this.data.andorid;  
 
             this.isLoading = false;
             this.isData = true;

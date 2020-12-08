@@ -5,11 +5,46 @@
 
 .our-services .service-wrapper{
     text-align: center;
-    margin-bottom: 40px;
+    padding: 20px 0;
+    position: relative;
 }
 
 .our-services .service-wrapper .service-title h4{
     color: #2b2b2b;
     font-weight: bold;
     margin: 15px 0;
+}
+
+.our-services .service-wrappe .service-img img{width: 120px;}
+
+.offer-wrapper{
+    display: none;
+}
+
+.offer-wrapper{
+    text-align: center;
+    margin: 40px 0;
+    margin-top: 50px;
+    display: block;
+}
+
+.offer-wrapper .offer-title h4{
+    color: #2b2b2b;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.offer-wrapper .offer-description p{
+    color: #2b2b2b;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.offer-wrapper .offer-img img{
+    width: 500px;
+    margin-top: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    .offer-wrapper .offer-img img{width: 100%;}    
 }

@@ -19,6 +19,9 @@ import {MatRippleModule} from '@angular/material/core';
 // Owl
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
+// Slick
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 // App Components
 import { HomeComponent } from 'src/components/home/home.component';
 import { HomeSliderComponent } from 'src/components/home/home-slider/home-slider.component';
@@ -28,6 +31,7 @@ import { OurPortfolioComponent } from 'src/components/home/our-portfolio/our-por
 import { OurServicesComponent } from 'src/components/home/our-services/our-services.component';
 import { OurOffersComponent } from 'src/components/home/our-offers/our-offers.component';
 import { OurClientsComponent } from 'src/components/home/our-clients/our-clients.component';
+import { ProjectDetailsComponent } from 'src/components/project-details/project-details.component';
 import { ContactComponent } from 'src/components/contact/contact.component';
 import { ContactPhoneComponent } from 'src/components/contact/contact-phone/contact-phone.component';
 import { ContactFormComponent } from 'src/components/contact/contact-form/contact-form.component';
@@ -55,6 +59,14 @@ import { MobilePageComponent } from 'src/components/static/mobile-page/mobile-pa
 import { MobileIntroComponent } from 'src/components/static/mobile-page/mobile-intro/mobile-intro.component';
 import { MobileCodesrootsComponent } from 'src/components/static/mobile-page/mobile-codesroots/mobile-codesroots.component';
 import { MobileWorkComponent } from 'src/components/static/mobile-page/mobile-work/mobile-work.component';
+import { ShopPageComponent } from 'src/components/static/shop-page/shop-page.component';
+import { ShopCodesrootsComponent } from 'src/components/static/shop-page/shop-codesroots/shop-codesroots.component';
+import { ShopIntroComponent } from 'src/components/static/shop-page/shop-intro/shop-intro.component';
+import { ShopWorkComponent } from 'src/components/static/shop-page/shop-work/shop-work.component';
+import { LearningPageComponent } from 'src/components/static/learning-page/learning-page.component';
+import { LearningIntroComponent } from 'src/components/static/learning-page/learning-intro/learning-intro.component';
+import { AllLessonsComponent } from 'src/components/static/all-lessons/all-lessons.component';
+import { LessonDetailsComponent } from 'src/components/static/lesson-details/lesson-details.component';
 
 // App Reusable Components
 import { NavComponent } from 'src/components/reusable/nav/nav.component';
@@ -72,6 +84,7 @@ import { PackagesComponent } from 'src/components/reusable/packages/packages.com
 // App Services
 import { HomeService } from 'src/services/home/home.service';
 import { ContactService } from 'src/services/contact/contact.service';
+import { LearningService } from 'src/services/learning/learning.service';
 
 registerLocaleData(en);
 
@@ -90,6 +103,7 @@ registerLocaleData(en);
     OurServicesComponent,
     OurOffersComponent,
     OurClientsComponent,
+    ProjectDetailsComponent,
     ContactComponent,
     ContactPhoneComponent,
     ContactFormComponent,
@@ -121,7 +135,15 @@ registerLocaleData(en);
     MobilePageComponent,
     MobileIntroComponent,
     MobileCodesrootsComponent,
-    MobileWorkComponent
+    MobileWorkComponent,
+    ShopPageComponent,
+    ShopCodesrootsComponent,
+    ShopIntroComponent,
+    ShopWorkComponent,
+    LearningPageComponent,
+    LearningIntroComponent,
+    AllLessonsComponent,
+    LessonDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -134,11 +156,28 @@ registerLocaleData(en);
     MatRippleModule,
     BrowserAnimationsModule,
     CarouselModule,
+    SlickCarouselModule,
     RouterModule.forRoot([
       {
         path: '',
         component: HomeComponent
       },
+      {
+        path: 'دروس-تعليمية',
+        component: LearningPageComponent
+      },
+      {
+        path: 'posts/viewpost/:name',
+        component: AllLessonsComponent
+      },
+      {
+        path: 'posts/viewpost/details/:name',
+        component: LessonDetailsComponent
+      },                   
+      {
+        path: 'تفاصيل',
+        component: ProjectDetailsComponent
+      },       
       {
         path: 'الدعم-الفني',
         component: SupportPageComponent
@@ -172,6 +211,10 @@ registerLocaleData(en);
         component: MobilePageComponent
       },
       {
+        path: 'المتجر-الالكتروني-المتكامل',
+        component: ShopPageComponent
+      },      
+      {
         path: 'تواصل-معنا',
         component: ContactComponent
       },                                                               
@@ -180,7 +223,8 @@ registerLocaleData(en);
   providers: [
     { provide: NZ_I18N, useValue: en_US },
     HomeService,
-    ContactService
+    ContactService,
+    LearningService
   ],
   bootstrap: [AppComponent]
 })

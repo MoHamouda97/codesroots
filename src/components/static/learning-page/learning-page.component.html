@@ -1,0 +1,29 @@
+<section class="learning" style="margin-top: 0;">
+    <div class="wrapper" *ngIf="isData">
+        <learning-intro></learning-intro>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4" *ngFor="let lesson of lessons">
+                    <a routerLink="/posts/viewpost/{{lesson.name}}">
+                        <div 
+                            class="card" 
+                            style="margin-bottom: 25px; border-bottom: 2px solid #0c2f69; cursor: pointer;" 
+                            matRipple>
+                            <img 
+                                class="card-img-top" 
+                                src="https://www.codesroots.com//library/codesroots/photo/umphotos/{{lesson.photo}}" 
+                                alt="Card image cap"
+                                style="height: 350px;">
+                            <div class="card-body text-center">
+                              <h5 class="card-title" style="color: #0c2f69; font-size: 20px;">{{lesson.catheads}}</h5>
+                            </div>
+                        </div> 
+                    </a>                   
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <app-loader [loader]='isLoading'></app-loader>
+</section>

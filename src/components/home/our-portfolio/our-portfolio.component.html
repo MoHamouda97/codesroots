@@ -6,9 +6,11 @@
                     معرض اعمالنا
                 </h2>
             </div>
-            <div class="col-md-2" *ngFor="let work of works">
+            <div class="col-md-3" *ngFor="let work of works; let i = index">
                 <div class="wrapper">
-                    <img src="https://www.codesroots.com/library/homepage/photo/umphotos/{{work.photo}}" alt="{{work.name}}" />
+                    <a routerLink="/تفاصيل" (click)="setIndex(i)">
+                        <img src="https://www.codesroots.com/library/homepage/photo/umphotos/{{work.photo}}" alt="{{work.name}}" />
+                    </a>                    
                 </div>                
             </div>
         </div>

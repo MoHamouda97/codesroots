@@ -1,3 +1,9 @@
+.navbar .navbar-brand .sub-brand{
+    display: block;
+    color: #fff;
+    font-size: 10px;
+}
+
 .navbar .navbar-nav .dropdown-menu .icon{width: 30px;}
 
 .cta{
@@ -6,16 +12,20 @@
     text-align: center;
     padding: 10px;
     border-radius: 5px;
-    color: #fff;
-    background-color: #50D0C7;
+    color: #fff;    
     text-decoration: none;
     margin-left: 1rem; 
     font-weight: bold;
+    margin-right: 1rem;
+    transition: all .3s ease-out;
 }
+
+.cta:hover{background-color: #50D0C7 !important;}
 
 @media (min-width: 320px) and (max-width: 768px) {
     .cta{
         width: 100%;
         margin-top: 15px;
+        margin-right: 0;
     }
 }

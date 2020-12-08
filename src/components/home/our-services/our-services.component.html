@@ -1,89 +1,49 @@
-<section class="our-services">
+<section class="our-services" style="direction: ltr; margin-bottom: -80px;">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 text-center">
                 <img src="./../../../assets/images/our-offers.png" alt="" class="section-title" />
-            </div>
-            <div class="col-md-3">
-                <div class="service-wrapper">
-                    <div class="service-img">
-                        <img src="./../../../assets/images/cars.png" alt="" />
-                    </div>
-                    <div class="service-title">
-                        <h4>تصميم موقع شركة</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="service-wrapper">
-                    <div class="service-img">
-                        <img src="./../../../assets/images/decor.png" alt="" />
-                    </div>
-                    <div class="service-title">
-                        <h4>تصميم موقع اثاث</h4>
-                    </div>
-                </div>
             </div> 
-            <div class="col-md-3">
-                <div class="service-wrapper">
-                    <div class="service-img">
-                        <img src="./../../../assets/images/e-commerce.png" alt="" />
+            <div class="col-md-12">
+                <ngx-slick-carousel 
+                    class="carousel" 
+                    style="padding-bottom: 10px;"
+                    #slickModal="slick-carousel" 
+                    [config]="slideConfig">
+                    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                        <div class="service-wrapper text-center">
+                            <div class="service-title">
+                                <h4>{{slide.title}}</h4>
+                            </div>
+                        </div>
                     </div>
-                    <div class="service-title">
-                        <h4>تصميم متجر الكتروني</h4>
-                    </div>
-                </div>
-            </div> 
-            <div class="col-md-3">
-                <div class="service-wrapper">
-                    <div class="service-img">
-                        <img src="./../../../assets/images/fitness.png" alt="" />
-                    </div>
-                    <div class="offer-title">
-                        <h4>تصميم موقع شخصي</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="service-wrapper">
-                    <div class="service-img">
-                        <img src="./../../../assets/images/furinture.png" alt="" />
-                    </div>
-                    <div class="service-title">
-                        <h4>نظام ادارة المعارض والمناديب</h4>
-                    </div>
-                </div>
-            </div> 
-            <div class="col-md-3">
-                <div class="service-wrapper">
-                    <div class="service-img">
-                        <img src="./../../../assets/images/law.png" alt="" />
-                    </div>
-                    <div class="service-title">
-                        <h4>عرض تصميم موقع محاماة</h4>
-                    </div>
-                </div>
-            </div> 
-            <div class="col-md-3">
-                <div class="service-wrapper">
-                    <div class="service-img">
-                        <img src="./../../../assets/images/medical.png" alt="" />
-                    </div>
-                    <div class="service-title">
-                        <h4>تصميم موقع طبي او مستشفى</h4>
-                    </div>
-                </div>
-            </div> 
-            <div class="col-md-3">
-                <div class="service-wrapper">
-                    <div class="service-img">
-                        <img src="./../../../assets/images/school.png" alt="" />
-                    </div>
-                    <div class="service-title">
-                        <h4>تصميم موقع مدرسة او اكاديمية</h4>
-                    </div>
-                </div>
-            </div>                                                                                
+                </ngx-slick-carousel>
+
+                <ngx-slick-carousel 
+                    class="carousel-desc" 
+                    #slickModal="slick-carousel" 
+                    [config]="slideConfigDesc">
+                    <div ngxSlickItem *ngFor="let offer of offers" class="slide-desc">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="offer-wrapper">
+                                    <div class="offer-title">
+                                        <h4>{{offer.title}}</h4>
+                                    </div>
+                                    <div class="offer-description">
+                                        <p>
+                                            {{offer.desc}}
+                                        </p>
+                                    </div>                    
+                                    <div class="offer-img">
+                                        <img src="{{offer.img}}" alt="" />
+                                    </div>                    
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>                    
+                </ngx-slick-carousel>                
+            </div>           
         </div>
     </div>
 </section>

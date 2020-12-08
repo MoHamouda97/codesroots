@@ -9,7 +9,40 @@
     display: inline-block;
     color: #fff;
     font-size: 15px;
-    margin-left: 20px;
+    margin-left: 10px;
+}
+
+.top-nav ul li.comp-mail::after{
+    z-index: 3;
+    background: url('./../../../../assets/images/spirtes.png') -22px -3px;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 41px;
+    height: 33px;
+    position: relative;
+    top: -3px;
+    transition: all .5s ease-out;
+}
+
+.top-nav ul li.comp-mail span{
+    background: #25a4b3;
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
+    overflow: hidden;    
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    transition: all .5s ease-out;
+}
+
+.top-nav ul li.comp-mail:hover > span{
+    visibility: visible;
+    opacity: 1;
+    width: 155px;
+    padding: 0 5px;
 }
 
 .top-nav ul li i{font-size: 20px;}
@@ -28,10 +61,17 @@
 .top-nav .stat p{margin: 0;}
 
 @media (min-width: 320px) and (max-width: 767px) {
-    .top-nav ul{text-align: center;}
+    .top-nav ul{text-align: right;}
 
     .top-nav ul li{
         font-size: 12px;
         margin-left: 13px;
     }
+
+    .top-nav ul li.comp-mail:hover > span{
+        visibility: visible;
+        opacity: 1;
+        width: 125px;
+        padding: 0 5px;
+    }    
 }

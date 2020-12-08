@@ -1,21 +1,21 @@
-.our-portfolio{
-    background-color: #50D0C7;
-    padding: 40px 0;
+.our-portfolio{padding: 40px 0;}
+
+.our-portfolio .wrapper img{
+    width: 135px;
+    height: 250px;
+    display: block;
+    margin: auto;
 }
 
-img{
-    width: 100%;
+.our-portfolio .wrapper{
+    position: relative;
 }
-
-.our-portfolio .wrapper{margin-bottom: 40px;}
 
 .our-portfolio .wrapper h4{
     font-weight: bold; 
     margin-top: 15px;
-    color: #fff;
+    color: #000;
 }
-
-.our-portfolio-description .wrapper{margin-bottom: 40px;}
 
 .our-portfolio-description .wrapper .portfolio-description p{
     color: #000;
@@ -24,10 +24,18 @@ img{
     margin-bottom: 16px;
 }
 
+.our-portfolio-description .wrapper .portfolio-description .full-desc-list{
+    width: 500px;
+    margin: auto;
+    text-align: right;
+    direction: rtl;
+}
+
 .our-portfolio-description .wrapper .portfolio-description .btns .stors a img{
-    width: 150px;
+    width: 150px !important;
     margin-right: 25px;
     margin-bottom: 10px;
+    display: inline-block;
 }
 
 .our-portfolio-description .wrapper .portfolio-description .btns a.btn-contact{
@@ -42,5 +50,154 @@ img{
 }
 
 .our-portfolio-description .wrapper .portfolio-img img{
-    width: 300px;
+    width: 600px;
+    margin-bottom: 40px;
+}
+
+.container1s {
+    background: #5967C3;
+    background: -webkit-linear-gradient(left top, #5967C3, #83cedc);
+    background: linear-gradient(to bottom right, #5967C3, #83cedc);
+    position: relative;
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    position: relative;
+    top: 21px;
+    z-index: 1;
+    display: inline-block; 
+    left: -24px;  
+    box-shadow: 0 5px 10px 0px #3C385C; 
+}
+
+.title {
+    color: #FFF;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 15px;
+    direction: rtl;
+}
+
+.main_number {
+    position: absolute;
+    top: 27px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 65px;
+    color: #FFFFFF;
+    opacity: 0.2;
+    font-weight: 800;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.container_text {
+    position: absolute;
+    top: 52%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #FFFFFF;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.containers a span {
+    opacity: 0.6;
+}
+
+.container2s {
+    background: #ffaec2;
+    background: -webkit-linear-gradient(left top, #ffaec2, #7e4aaf);
+    background: linear-gradient(to bottom right, #ffaec2, #7e4aaf);
+    z-index: 2;
+    position: relative;
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    top: 0;
+    z-index: 1;  
+    display: inline-block;
+    transform: translate(-50%, 0);
+    left: 10%; 
+    box-shadow: 0 5px 10px 0px #3C385C;     
+}
+
+.container3s {
+    background: #CA619C;
+    background: -webkit-linear-gradient(left top, #CA619C, #DBC084);
+    background: linear-gradient(to bottom right, #CA619C, #DBC084);
+    position: relative;
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    top: -280px;
+    z-index: 1;
+    display: inline-block;
+    transform: translate(-50%, 0);
+    right: -84%; 
+    box-shadow: 0 5px 10px 0px #3C385C;
+}
+
+.actives {
+    z-index: 3;
+    top: 0;
+    height: 300px;
+}
+
+.containers .bottom-btn{
+    color: #3C385C;
+    font-weight: 800;
+    font-size: 1.2rem;
+    background-color: #FFF;
+    width: 170px;
+    border: 1px solid gray;
+    line-height: 40px;
+    display: block;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    .our-portfolio-description .wrapper .portfolio-description .full-desc-list{
+        width: 100%;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .our-portfolio-description .wrapper .portfolio-img img {width: 100%;}
+
+    .our-portfolio-description .wrapper .portfolio-description .btns .stors a img{
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .containers{
+        width: 145px;
+    }
+
+    .containers .title{font-size: 25px;}
+
+    .containers .bottom-btn{width: 100%;}
+
+    .active{left: 16px;}
 }

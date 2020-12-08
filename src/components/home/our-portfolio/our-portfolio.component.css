@@ -1,5 +1,8 @@
 img{
-    width: 100%;
+    width: 135px;
+    height: 250px;
+    display: block;
+    margin: auto;
 }
 
 .our-portfolio .wrapper{margin-bottom: 40px;}

@@ -14,6 +14,6 @@ export class HomeService {
   }
 
   getWorks () {
-    return this.http.get(`${environment.URLSite}ourworks.json`);
+    return this.http.get(`${environment.URLSite}ourworks/worklist.json`);
   }  
 }

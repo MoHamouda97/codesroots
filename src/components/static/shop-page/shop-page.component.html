@@ -1,0 +1,11 @@
+<section class="shop">
+    <div class="wrapper" *ngIf="isData">
+        <shop-intro></shop-intro>
+        <div class="container-fluid">
+            <app-fatc-boxes [facts]='facts' [isCustom]="isCustom"></app-fatc-boxes>
+        </div>
+        <shop-codesroots></shop-codesroots>
+        <shop-work [works]='works'></shop-work>   
+    </div>
+    <app-loader [loader]='isLoading'></app-loader>
+</section>

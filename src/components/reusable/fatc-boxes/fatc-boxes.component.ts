@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class FatcBoxesComponent implements OnInit {
   @Input('facts') facts;
+  @Input('isCustom') isCustom = false;
   
   constructor() { }
 

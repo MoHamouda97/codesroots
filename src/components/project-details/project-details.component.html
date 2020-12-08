@@ -1,0 +1,33 @@
+<section class="project-description">
+    <div class="container-fluid" *ngIf="isData">
+        <div class="row center-align">
+            <div class="col-md-6">
+                <div class="description text-center">
+                    <h3 class="inner-title" style="font-weight: bold;">
+                        مميزات
+                        {{work.name}}
+                    </h3>
+                    <p>{{work.description}}</p>
+                    <ul id="js_full_description" class="text-right"></ul>
+                    <div class="btns">
+                        <div class="stors">
+                            <a href="{{work.android_link}}" target="_blank">
+                                <img src="./../../../../assets/images/google-play.png" alt="" />
+                            </a>
+                            <a href="{{work.ios_link}}" target="_blank">
+                                <img src="./../../../../assets/images/app-store.png" alt="" />
+                            </a>                                
+                        </div>
+                        <a routerLink="/تواصل-معنا" class="btn-contact" matRipple>تواصل معنا الان</a>
+                    </div>
+                </div>           
+            </div>
+            <div class="col-md-6">
+                <div class="project-img text-center">
+                    <img src="https://www.codesroots.com/library/homepage/photo/umphotos/{{work.inside_photo}}" alt="{{work.name}}" />
+                </div> 
+            </div>            
+        </div>
+    </div>
+    <app-loader [loader]='isLoading'></app-loader>
+</section>

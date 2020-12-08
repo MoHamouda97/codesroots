@@ -1,6 +1,7 @@
 .seo-service{
-    margin-top: 0;
+    margin-top: 40px;
     padding: 35px 0;
+    background-color: #C43F63;
 }
 
 .seo-service .service{
@@ -12,12 +13,14 @@
 .seo-service .service h2{
     font-size: 27px;
     font-weight: bold;
-    color: #dfbf16;
+    color: #fff;
     margin-bottom: 25px;
+    text-align: right;
 }
 
 .seo-service ul{
     padding-right: 25px;
+    color: #fff;
 }
 
 .seo-service ul li{

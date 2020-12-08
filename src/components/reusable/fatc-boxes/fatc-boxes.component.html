@@ -1,8 +1,9 @@
 <div class="row">
     <div class="col-md-4" *ngFor="let fact of facts">
-        <div class="fact-box">
+        <div class="fact-box hvr-wobble-vertical">
             <div class="box-img">
-                <img src="{{fact.icon}}" alt=""  width="60px"/>
+                <img src="{{fact.icon}}" alt=""  width="60px" *ngIf="!isCustom"/>
+                <img src="{{fact.icon}}" alt=""  width="100%" height="100%" *ngIf="isCustom"/>
             </div>
             <div class="box-content">
                 <h3 class="title">{{fact.title}}</h3>

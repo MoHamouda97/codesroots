@@ -1,6 +1,18 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" routerLink="" matRipple>
-        CodesRoots
+    <a class="navbar-brand text-center logo-hover" routerLink="" matRipple>
+        <div class="container">
+            <div class="row center-align">
+                <div class="col-6">
+                    CodesRoots
+                    <span class="sub-brand">
+                        للخدمات و الحلول البرمجية
+                    </span>
+                </div>
+                <div class="col-6">
+                    <img src="./../../../../assets/images/logo.png" alt="logo" width="60px" />
+                </div>            
+            </div>
+        </div>        
     </a>
     <button 
         class="navbar-toggler" 
@@ -14,7 +26,7 @@
     </button>
   
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav m-auto mt-2 text-right">
+      <ul class="navbar-nav mr-auto mt-2 text-right">
         <li class="nav-item">
             <a 
                 class="nav-link" 
@@ -28,6 +40,17 @@
         </li>
         <li class="nav-item">
             <a 
+                class="nav-link" 
+                href="#"
+                matRipple
+                routerLinkActive="active" 
+                routerLink="/دروس-تعليمية" 
+                [routerLinkActiveOptions] = '{ exact: true }'>
+                دروس تعليمية
+            </a>
+        </li>        
+        <li class="nav-item">
+            <a 
                 class="nav-link dropdown-toggle" 
                 href="#" 
                 id="ourServices" 
@@ -39,7 +62,7 @@
                 خدماتنا
             </a> 
             <div class="dropdown-menu" aria-labelledby="ourServices">
-                <a 
+                <!--<a 
                     class="dropdown-item"  
                     matRipple
                     routerLinkActive="active" 
@@ -50,8 +73,8 @@
                         alt="customer-service"
                         class="icon" />
                     الدعم الفني
-                </a>
-                <a 
+                </a>-->
+                <!--<a 
                     class="dropdown-item"
                     matRipple
                     routerLinkActive="active" 
@@ -62,8 +85,8 @@
                         alt="laptop"
                         class="icon" />
                     ارشفة الموقع SEO                    
-                </a>
-                <a 
+                </a>-->
+                <!--<a 
                     class="dropdown-item" 
                     matRipple
                     routerLinkActive="active" 
@@ -74,7 +97,7 @@
                         alt="hosting-services"
                         class="icon" />
                     الاستضافة                    
-                </a> 
+                </a>--> 
                 <a 
                     class="dropdown-item"
                     matRipple
@@ -87,7 +110,7 @@
                         class="icon" />
                     تصميم المواقع                    
                 </a> 
-                <a 
+                <!--<a 
                     class="dropdown-item" 
                     matRipple
                     routerLinkActive="active" 
@@ -98,7 +121,7 @@
                         alt="laptop"
                         class="icon" />
                     برامج سطح المكتب                    
-                </a>
+                </a>-->
                 <a 
                     class="dropdown-item" 
                     matRipple
@@ -109,9 +132,9 @@
                         src="./../../../../assets/images/mobile.png" 
                         alt="mobile"
                         class="icon" />
-                    تصميم تطبيقات الجوال                    
+                    برمجة تطبيقات الجوال                    
                 </a>                    
-                <a 
+                <!--<a 
                     class="dropdown-item" 
                     matRipple
                     routerLinkActive="active" 
@@ -122,14 +145,14 @@
                         alt="megaphone"
                         class="icon" />
                      التسويق الالكتروني                    
-                </a> 
-                <a class="dropdown-item" href="#" matRipple>
+                </a>--> 
+                <!--<a class="dropdown-item" href="#" matRipple>
                     <img 
                         src="./../../../../assets/images/web-domain.png" 
                         alt="web-domain"
                         class="icon" />
                      شراء دومين                    
-                </a>                                                             
+                </a>-->                                                            
             </div>                     
         </li>
         <li class="nav-item">
@@ -150,13 +173,49 @@
                     class="dropdown-item" 
                     matRipple
                     routerLinkActive="active" 
+                    routerLink="/المتجر-الالكتروني-المتكامل" 
+                    [routerLinkActiveOptions] = '{ exact: true }'>
+                    <img 
+                        src="./../../../../assets/images/shop.png" 
+                        alt="car"
+                        class="icon" />
+                   المتجر الالكتروني المتكامل
+                </a>
+                <a 
+                    class="dropdown-item"
+                    matRipple
+                    routerLinkActive="active" 
+                    routerLink="/تصميم-مواقع" 
+                    [routerLinkActiveOptions] = '{ exact: true }'>
+                    <img 
+                        src="./../../../../assets/images/web-design.png" 
+                        alt="web-design"
+                        class="icon" />
+                    تصميم المواقع                    
+                </a>                 
+                <a 
+                    class="dropdown-item" 
+                    matRipple
+                    routerLinkActive="active" 
+                    routerLink="/تصميم-برمجة--تطبيقات-الموبايل" 
+                    [routerLinkActiveOptions] = '{ exact: true }'>
+                    <img 
+                        src="./../../../../assets/images/mobile.png" 
+                        alt="mobile"
+                        class="icon" />
+                    برمجة تطبيقات الجوال                    
+                </a>                                 
+                <a 
+                    class="dropdown-item" 
+                    matRipple
+                    routerLinkActive="active" 
                     routerLink="/برنامج ادارة السيارات المؤجرة" 
                     [routerLinkActiveOptions] = '{ exact: true }'>
                     <img 
                         src="./../../../../assets/images/car.png" 
                         alt="car"
                         class="icon" />
-                    برنامج لادارة شركات تاجير السيارات
+                   برنامج السيارات
                 </a>                                                           
             </div>            
         </li> 
@@ -170,14 +229,15 @@
                 [routerLinkActiveOptions] = '{ exact: true }'>
                 اتصل بنا
             </a>
-        </li>               
+        </li> 
+        <li class="nav-item">
+            <a 
+                matRipple 
+                class="cta hvr-rectangle-in"
+                routerLink="/تواصل-معنا">
+                افتح تذكرة
+            </a>
+        </li>                       
       </ul>
-
-      <a 
-        matRipple 
-        class="cta"
-        routerLink="/contact">
-        افتح تذكرة
-      </a>
     </div>
 </nav>

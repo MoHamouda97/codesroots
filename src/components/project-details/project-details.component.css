@@ -1,0 +1,49 @@
+.project-description .description h3{
+    font-weight: bold !important;
+    color: #015692;
+    text-align: right;
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+.project-description .description p{
+    color: #000;
+    line-height: 1.9;
+    font-size: 16px;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+#js_full_description{
+   padding-right: 25px;
+   margin-bottom: 16px;
+}
+
+.project-description .description  .btns .stors a img{
+    width: 150px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+
+.project-description .description .btns a.btn-contact{
+    width: 200px;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #50D0C7;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.project-description .project-img  img{
+    width: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+    .project-description .description h3{font-size: 26px;}
+    
+    .project-description .description  .btns .stors a img{margin-right: 10px;}
+
+    .project-description .project-img  img{width: 100%;}   
+}

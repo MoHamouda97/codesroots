@@ -14,6 +14,7 @@ export class MobilePageComponent implements OnInit {
   ];
   isLoading = true;
   isData = false;  
+  isCustom = true;
   data;
   slides;
   works;
@@ -27,7 +28,7 @@ export class MobilePageComponent implements OnInit {
     this.service.getWorks().subscribe(
       res => {
         this.data = res;
-        this.works = this.data.data;  
+        this.works = this.data.andorid;  
 
         this.isLoading = false;
         this.isData = true;
