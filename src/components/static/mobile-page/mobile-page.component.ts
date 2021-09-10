@@ -1,5 +1,6 @@
 import { HomeService } from './../../../services/home/home.service';
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-mobile-page',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mobile-page.component.css']
 })
 export class MobilePageComponent implements OnInit {
+  title = 'برمجة تطبيقات الجوال';
   facts = [
     {icon: "./../../../assets/images/android.png", title: "تصميم تطبيقات android", content: "نستطيع تحويل فكرتك لتطبيق يعمل علي بيئة عمل Android، بدءاً من التخطيط والتصميم والتنفيذ، نضمن تطبيق يستطيع المنافسة في متجر تطبيقات Google Android Market."},
     {icon: "./../../../assets/images/apple.png", title: "تصميم تطبيقات IOS", content: "هل لديك فكرة تطبيق ترغب في تنفيذة علي بيئة تشغيل IOS ؟ codesroots يمكن أن تساعد في تطوير فكرتك إلى تطبيق فعلي سيساعدك علي مواجهة منافسيك بقوة، سنجعلك فى القمة !"},
@@ -18,9 +20,10 @@ export class MobilePageComponent implements OnInit {
   data;
   slides;
   works;
-  constructor(private service: HomeService) { }
+  constructor(private service: HomeService, private titleService: Title) { }
 
   ngOnInit(): void {
+    this.titleService.setTitle(this.title);
     this.getWorks();
   }
 

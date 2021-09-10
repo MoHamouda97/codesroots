@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LearningService } from 'src/services/learning/learning.service';
 import { ActivatedRoute } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-all-lessons',
@@ -8,15 +9,17 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./all-lessons.component.css']
 })
 export class AllLessonsComponent implements OnInit {
+  title = 'دروس تعليمية';
   name;
   data;
   lessons;
   isLoading = true;
   isData = false; 
 
-  constructor(private service: LearningService, private router: ActivatedRoute) { }
+  constructor(private service: LearningService, private router: ActivatedRoute, private titleService: Title) { }
 
   ngOnInit(): void {
+    this.titleService.setTitle(this.title);
     this.name = this.router.snapshot.paramMap.get("name");
     this.getRelatedLessons();
   }

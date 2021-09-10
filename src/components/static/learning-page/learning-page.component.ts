@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { LearningService } from './../../../services/learning/learning.service';
 
 @Component({
@@ -7,13 +8,15 @@ import { LearningService } from './../../../services/learning/learning.service';
   styleUrls: ['./learning-page.component.css']
 })
 export class LearningPageComponent implements OnInit {
+  title = 'دروس تعليمية';
   data;
   lessons;
   isLoading = true;
   isData = false; 
-  constructor(private service: LearningService) { }
+  constructor(private service: LearningService, private titleService: Title) { }
 
   ngOnInit(): void {
+    this.titleService.setTitle(this.title);
     this.getLessons();
   }
 

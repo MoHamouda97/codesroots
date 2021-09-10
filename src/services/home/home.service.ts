@@ -15,5 +15,9 @@ export class HomeService {
 
   getWorks () {
     return this.http.get(`${environment.URLSite}ourworks/worklist.json`);
-  }  
+  } 
+  
+  getMarketWorks () {
+    return this.http.get(`${environment.URLSite}ourworks/marketappslist.json`);
+  }    
 }

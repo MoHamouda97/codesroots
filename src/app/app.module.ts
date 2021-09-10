@@ -143,7 +143,7 @@ registerLocaleData(en);
     LearningPageComponent,
     LearningIntroComponent,
     AllLessonsComponent,
-    LessonDetailsComponent
+    LessonDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -224,7 +224,7 @@ registerLocaleData(en);
     { provide: NZ_I18N, useValue: en_US },
     HomeService,
     ContactService,
-    LearningService
+    LearningService,
   ],
   bootstrap: [AppComponent]
 })

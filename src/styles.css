@@ -4,6 +4,8 @@
 
 /* Start Global */
 
+html{font-family: 'Cairo', sans-serif !important;}
+
 body{
     font-family: 'Cairo', sans-serif !important;
     direction: rtl;
@@ -47,6 +49,17 @@ a{text-decoration: none !important;}
 .inner-title{
     font-weight: bold !important;
     text-shadow: 10px 10px #F0F0F0;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .section-title{
+        font-size: 40px !important;
+    }
+
+    .fa-ul {
+        margin-right: 2.5em !important;
+        margin-left: 0 !important;
+    }
 }
 
 /* Hover css */

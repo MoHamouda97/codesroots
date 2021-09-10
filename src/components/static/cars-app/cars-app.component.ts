@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-cars-app',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cars-app.component.css']
 })
 export class CarsAppComponent implements OnInit {
+  title = 'برنامج السيارات';
 
-  constructor() { }
+  constructor(private titleService: Title) { }
 
   ngOnInit(): void {
+    this.titleService.setTitle(this.title);
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { NavigationEnd, Router } from '@angular/router';
 import * as $ from 'jquery';
 
@@ -8,11 +9,13 @@ import * as $ from 'jquery';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'CodesRoots';
+  title = 'الصفحة الرئيسية';
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private titleService: Title) { }
 
   ngOnInit() {
+    this.titleService.setTitle(this.title);
+    
     this.router.events.subscribe((evt) => {
         if (!(evt instanceof NavigationEnd)) {
             return;
